@@ -1,0 +1,82 @@
+.navbar-container {
+  width: 100%;
+  padding: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-bottom: 1px solid var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar-container .input-container {
+  display: flex;
+  width: 300px;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  border: 1px solid var(--secondary-color);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+}
+.input-container .searchIcon {
+  font-size: 24px;
+  color: #6f6e72;
+}
+.navbar-container .input-container input {
+  height: 100%;
+  flex: 1;
+  border: none;
+  outline: none;
+}
+.control-container {
+  display: flex;
+  gap: 25px;
+}
+.navButton {
+  border: none;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  height: 36px;
+}
+.navButton:hover {
+  background: #e4e4e4;
+  border-radius: 5px;
+}
+.post-icon {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+.profile-icon {
+  font-size: 20px;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar-container .title {
+    display: none;
+  }
+  .navbar-container {
+    padding: unset;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .control-container {
+    margin-left: 20px;
+    gap: 10px;
+  }
+  .input-container {
+    /* width: 100%; */
+  }
+}

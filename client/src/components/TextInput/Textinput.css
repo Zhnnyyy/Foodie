@@ -1,0 +1,21 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.input-container label {
+  font-size: 15px;
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.input-container input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-color);
+}
+.error {
+  color: red;
+  font-size: 13px;
+}

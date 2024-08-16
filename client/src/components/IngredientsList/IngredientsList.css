@@ -1,0 +1,27 @@
+.ingredientsList-container {
+  /* width: 100%; */
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px; */
+}
+.ingredientsList-container input {
+  height: 35px;
+  flex: 1;
+}
+
+.ingredientsList-container .removeItem {
+  width: 40px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: none;
+}
+.removeItem:hover {
+  background: #e4e4e4;
+}

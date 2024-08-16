@@ -1,0 +1,39 @@
+.ProfileDropdown-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 8%;
+  margin-top: 60px;
+  width: 130px;
+  height: 100px;
+  padding: 3px;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  border: 1px solid #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  transition: 0.2s ease-in-out;
+}
+.ProfileDropdown-container button {
+  flex: 1;
+  border: none;
+  background: none;
+  text-align: left;
+  padding-left: 10px;
+}
+.ProfileDropdown-container button:nth-of-type(2) {
+  border-bottom: 1px solid #e4e4e4;
+}
+.ProfileDropdown-container button:hover {
+  background: #eaeaea;
+}
+
+.ProfileDropdown-container.hide {
+  transform: scale(0);
+}
+
+.ProfileDropdown-container.show {
+  transform: scale(1);
+}

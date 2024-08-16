@@ -1,0 +1,28 @@
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  margin-top: 80px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.container .loader {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 480px) {
+  .container .loader {
+    position: fixed;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -12%);
+    z-index: 4;
+  }
+}
