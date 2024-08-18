@@ -8,9 +8,12 @@ const multer = require("multer");
 const app = express();
 const port = 4000;
 
-// const dbx = new Dropbox({ accessToken: process.env.DROPBOX_TOKEN, fetch });
-const upload = multer({ dest: "/uploads", storage: multer.memoryStorage() });
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://foodie-rho-liard.vercel.app",
+    methods: ["GET", "POST", "PATCH"],
+  })
+);
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
