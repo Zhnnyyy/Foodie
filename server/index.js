@@ -2,13 +2,12 @@ require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const userRoutes = require("./src/routes/User.routes");
-const recipeRoutes = require("./src/routes/Recipe.routes");
 const multer = require("multer");
 const app = express();
-const port = 4000;
-
 app.use(cors());
+const port = 4000;
+const userRoutes = require("./src/routes/User.routes");
+const recipeRoutes = require("./src/routes/Recipe.routes");
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
