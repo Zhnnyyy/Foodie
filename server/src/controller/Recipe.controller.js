@@ -68,12 +68,11 @@ class RecipeController {
   }
 
   async updateLikeStatus(req, res) {
-    // const result = await Recipe.updateRecipeLike({
-    //   recipe_id: req.body.recipe_id,
-    //   user_id: req.body.userID,
-    // });
-    // res.json(result);
-    res.json({ HELLO: "HEHEHE" });
+    const result = await Recipe.updateRecipeLike({
+      recipe_id: req.body.recipe_id,
+      user_id: req.body.userID,
+    });
+    res.json(result);
   }
 }
 module.exports = RecipeController;

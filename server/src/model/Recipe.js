@@ -38,15 +38,16 @@ class Recipe {
   }
 
   async updateRecipeLike(req) {
-    const isLiked = await this.isLiked(req);
-    let status;
+    // const isLiked = await this.isLiked(req);
+    // let status;
 
-    if (isLiked.data[0].result == 1) {
-      status = await this.unlikeRecipe(req);
-    } else {
-      status = await this.likeRecipe(req);
-    }
-    return status;
+    // if (isLiked.data[0].result == 1) {
+    //   status = await this.unlikeRecipe(req);
+    // } else {
+    //   status = await this.likeRecipe(req);
+    // }
+    // return status;
+    return { HELLO: "HEHEHEHE" };
   }
 
   async likeRecipe(req) {
