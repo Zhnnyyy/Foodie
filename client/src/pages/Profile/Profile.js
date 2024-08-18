@@ -3,6 +3,7 @@ import "./Profile.css";
 import Recipecard from "../../components/RecipeCard/Recipecard";
 import makeQuery from "../../services/makeRequest";
 import { grid } from "ldrs";
+import { MdEdit } from "react-icons/md";
 grid.register();
 function Profile() {
   const [foodlist, setFoodList] = useState([]);
@@ -54,16 +55,33 @@ function Profile() {
     }
   }
 
+  function handleUploadProfile() {
+    const fileBtn = document.querySelector("#uploadProfile");
+    fileBtn.click();
+  }
+
   return (
     <div className="profile-container">
       <div className="info-container">
-        <img src="https://images.pexels.com/photos/262905/pexels-photo-262905.jpeg?auto=compress&cs=tinysrgb&w=600" />
+        <center>
+          <div className="img-container">
+            <img src="https://images.pexels.com/photos/262905/pexels-photo-262905.jpeg?auto=compress&cs=tinysrgb&w=600" />
+            <div className="backdrop" onClick={handleUploadProfile}>
+              {" "}
+              <MdEdit />
+              <input type="file" id="uploadProfile" />
+            </div>
+          </div>
+        </center>
         <br />
         <h3>Ed Emmanuel Perpetua</h3>
+        <br />
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.{" "}
         </p>
+
+        <button>Edit Profile</button>
       </div>
       <div className="foodlist-container">
         <div className="btn-container">
