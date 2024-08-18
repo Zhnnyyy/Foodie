@@ -10,7 +10,7 @@ const port = 4000;
 
 app.use(
   cors({
-    origin: "https://foodie-server-opal.vercel.app",
+    origin: "https://foodie-rho-liard.vercel.app/recipe/like",
     methods: ["GET", "POST", "PATCH"],
     allowedHeaders: "Content-Type,Authorization",
   })
