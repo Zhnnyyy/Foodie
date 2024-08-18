@@ -38,7 +38,7 @@ class Recipe {
   }
 
   async updateRecipeLike(req) {
-    // const isLiked = await this.isLiked(req);
+    const isLiked = await this.isLiked(req);
     // let status;
 
     // if (isLiked.data[0].result == 1) {
@@ -46,8 +46,7 @@ class Recipe {
     // } else {
     //   status = await this.likeRecipe(req);
     // }
-    // return status;
-    return { HELLO: "HEHEHEHE" };
+    return isLiked;
   }
 
   async likeRecipe(req) {
