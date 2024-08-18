@@ -12,6 +12,7 @@ app.use(
   cors({
     origin: "https://foodie-rho-liard.vercel.app",
     methods: ["GET", "POST", "PATCH"],
+    allowedHeaders: "Content-Type,Authorization",
   })
 );
 app.use(express.json());
